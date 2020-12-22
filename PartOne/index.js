@@ -1,4 +1,13 @@
+'use strict';
+
 const fs = require('fs');
+
+/**
+ * A note on the philosophy of how I develop:
+ * I know there are ways to condense a lot of these expressions
+ * but I tend to value readability over condensibility so long as
+ * it does not mean sacrificing efficiency
+ */
 
 /**
  * Gets the inputs for changes in freq
@@ -14,19 +23,17 @@ const getFrequencies = () => {
  * @param {Number} startingPos - The starting position
  */
 const getEndFrequency = async (frequencyArray, startingPos = 0) => {
-
     var currentFrequency = startingPos || 0;
-
     for (var nextFreq of frequencyArray){
-        if (nextFreq.startsWith('+')){
-            currentFrequency += parseInt(nextFreq.replace(/\+/g, ''));
-        } else {
-            currentFrequency -= parseInt(nextFreq.replace(/\-/g, ''));
-        }
+        currentFrequency += parseInt(nextFreq);
     }
 
     return currentFrequency;
 }
+
+
+
+
 
 module.exports = {
     getEndFrequency: getEndFrequency,
