@@ -1,4 +1,4 @@
-const { getEndFrequency, getFrequencies } = require('./../index');
+const { getEndFrequency, getFrequencies } = require('../index');
 
 
 test('Changes Frequency Correctly', async () => {
