@@ -4,8 +4,7 @@
   "description": "",
   "main": "utils.js",
   "scripts": {
-    "test": "jest -- --coverage __tests__ --watch",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "test": "jest -- --coverage __tests__ --watch"
   },
   "repository": {
     "type": "git",
