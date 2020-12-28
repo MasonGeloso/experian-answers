@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MasonGeloso/experian-answers/issues"
   },
-  "homepage": "https://github.com/MasonGeloso/experian-answers#readme"
+  "homepage": "https://github.com/MasonGeloso/experian-answers#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
