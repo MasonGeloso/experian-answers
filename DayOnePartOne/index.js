@@ -9,6 +9,8 @@ const fs = require('fs');
  * it does not mean sacrificing efficiency
  */
 
+
+
 /**
  * Gets the inputs for changes in freq
  */

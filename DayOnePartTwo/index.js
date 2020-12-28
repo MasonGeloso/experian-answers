@@ -30,7 +30,7 @@ const getFrequencies = () => {
 
 
 /**
- * Calculates the end frequency after iterate through {frequcyArray} 
+ * Calculates the end frequency after iterate through { frequcyArray }
  * @param {Array} frequencyArray - Iterates through this array of frequencies
  * @param {Number} startingPos - The starting position
  */

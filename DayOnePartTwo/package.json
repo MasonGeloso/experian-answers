@@ -1,0 +1,16 @@
+{
+  "name": "DayOnePartTwo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
