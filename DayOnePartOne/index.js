@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 
 /**
  * A note on the philosophy of how I develop:
@@ -15,7 +16,8 @@ const fs = require('fs');
  * Gets the inputs for changes in freq
  */
 const getFrequencies = () => {
-    return JSON.parse(fs.readFileSync('./inputs.json', 'utf-8'));
+    return JSON.parse(fs.readFileSync(
+        path.join(process.cwd(), 'DayOnePartOne', 'inputs.json'), 'utf-8'));
 }
 
 

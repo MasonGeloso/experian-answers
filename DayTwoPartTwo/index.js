@@ -1,6 +1,8 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
+
 const { deepCopy } = require('../utils');
 
 
@@ -8,7 +10,9 @@ const { deepCopy } = require('../utils');
  * @returns {Array} - Provided inputs from adventofcode.com
  */
 const getInputs = () => {
-    return JSON.parse(fs.readFileSync('./input.json'));
+    return JSON.parse(fs.readFileSync(
+        path.join(process.cwd(), 'DayTwoPartTwo', 'input.json'), 'utf-8')
+    );
 }
 
 

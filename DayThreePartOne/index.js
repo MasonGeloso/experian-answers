@@ -1,6 +1,8 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
+
 const { filterObject } = require('../utils');
 
 
@@ -196,7 +198,7 @@ class Fabric {
  */
 const getInputs = () => {
     const inputs = JSON.parse(
-        fs.readFileSync('./input.json', 'utf-8')
+        fs.readFileSync(path.join(process.cwd(), 'DayThreePartOne', 'input.json'), 'utf-8')
     )
 
     return inputs.map(inp => {

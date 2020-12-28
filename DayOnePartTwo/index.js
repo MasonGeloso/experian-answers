@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 
 /**
  * A note on the philosophy of how I develop:
@@ -25,7 +26,8 @@ const deepCopy = (val) => {return JSON.parse(JSON.stringify(val))};
  * Gets the inputs for changes in freq
  */
 const getFrequencies = () => {
-    return JSON.parse(fs.readFileSync('./inputs.json', 'utf-8'));
+    return JSON.parse(fs.readFileSync(
+        path.join(process.cwd(), 'DayOnePartTwo', 'inputs.json'), 'utf-8'));
 }
 
 

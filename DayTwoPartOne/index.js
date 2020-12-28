@@ -1,10 +1,12 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 
 
 const getInputs = () => {
-    return JSON.parse(fs.readFileSync('./input.json'));
+    return JSON.parse(fs.readFileSync(
+        path.join(process.cwd(), 'DayTwoPartOne', 'input.json'), 'utf-8'));
 }
 
 
